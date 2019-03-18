@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./App.css";
+import InicSessao from "./Paginas/InicSessao";
 
 class App extends Component {
   render() {
@@ -30,7 +31,7 @@ class App extends Component {
                 Registo
               </a>
             </div>
-            <Route exact path="/">
+            <Route exact path="/" Component={InicSessao}>
               <div className="FormCenter">
                 <form className="FormField " onSubmit={this.handleSubmit}>
                   <div className="FormField">
