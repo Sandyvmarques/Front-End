@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./App.css";
 
 class App extends Component {
@@ -20,10 +20,11 @@ class App extends Component {
                 Registo
               </a>
             </div>
+
             <div className="FormTitle">
-              <a href="#" className="FormTitle__Link ">
+              <Link to="/sign-in" className="FormTitle__Link ">
                 Iniciar Sessao
-              </a>{" "}
+              </Link>{" "}
               or{" "}
               <a href="#" className="FormTitle__Link FormTitle__Link --Active">
                 Registo
